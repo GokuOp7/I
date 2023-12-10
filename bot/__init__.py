@@ -41,9 +41,9 @@ try:
  BOT_USERNAME = "bot_for_learning_nameless_bot"
  MAX_MESSAGE_LENGTH = 4096
  download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
- sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS", default=6748415360).split()))
+ sudo_users = list(set(int(x) for x in int(os.environ.get("SUDO_USERS", default=6748415360)).split()))
  sudo_users.append(6748415360)
- LOG_CHANNEL = os.environ.get("LOG_CHANNEL", default=-1002142167497)
+ LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", default=-1002142167497))
 except Exception as e:
  LOGS.info("ENV Are Missing")
 
