@@ -41,8 +41,7 @@ try:
  BOT_USERNAME = "bot_for_learning_nameless_bot"
  MAX_MESSAGE_LENGTH = 4096
  download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
- sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS", default=6748415360).split()))
- sudo_users.append(6748415360)
+ sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS", default="6748415360").split()))
  sudo_users.append(6748415360)
  LOG_CHANNEL = os.environ.get("LOG_CHANNEL", default="-1002108819224")
 except Exception as e:
