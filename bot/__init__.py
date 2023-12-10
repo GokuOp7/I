@@ -36,7 +36,7 @@ ffmpeg.append("-map 0 -c:v libx265 -crf 28 -c:s copy  -s 852x480 -preset veryfas
 try:
  api_id = int(os.environ.get("API_ID", default=3847632))
  api_hash = os.environ.get("API_HASH", default="1a9708f807ddd06b10337f2091c67657")
- bot_token = os.environ.get("BOT_TOKEN", default="6606855749:AAEUK8DmNxWWnp13enlFftv9DWO3LcreaCs")
+ bot_token = os.environ.get("BOT_TOKEN", default="6606855749:AAFqUCMIS11sLtzmbMKHlElEhk7hpsMuHD4")
  DATABASE_URL = os.environ.get("DATABASE_URL", default="mongodb+srv://personaluse:ImCrAzYbOy@personaluse.ounsjuz.mongodb.net/?retryWrites=true&w=majority") 
  BOT_USERNAME = "bot_for_learning_nameless_bot"
  MAX_MESSAGE_LENGTH = 4096
